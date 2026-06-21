@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* #region Tamagotchi Assets Layout */
 
 body {
   margin: 0;
@@ -15,7 +16,7 @@ body {
   background-position: center;
 }
 
-.screenSetUp {
+.screen {
   position: relative;
 }
 
@@ -23,15 +24,19 @@ body {
   position: fixed;
   top: 81px;
   left: 56.7px;
-  z-index: 10;
+  z-index: 100;
 }
 
-.screen {
+.screenBackground {
   position: fixed;
   top: 81px;
   left: 58px;
   z-index: 0;
 }
+
+/* #endregion */
+
+/* #region Bottom Buttons Layout */
 
 .menuButton {
   background: transparent;
@@ -56,6 +61,27 @@ body {
   position: fixed;
   top: 267.4px;
   left: 192.7px;
+}
+
+/* #endregion */
+
+/* character sprite assets */
+
+.character {
+  position: absolute;
+  top: 113px;
+  left: 91.5px;
+
+  width: 123px;
+  height: 123px;
+  z-index: 50;
+
+  background-color: transparent;
+}
+
+.character img {
+  position: fixed;
+  left: 87px;
 }
 
 button,

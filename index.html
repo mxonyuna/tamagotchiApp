@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> 
     <meta charset="UTF-8" />
     <title>Tamagotchi App</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div id="localTime"></div>
+    <div id="localTime"></div> <!--displayed local time-->
 
-    <div class="screenSetUp">
+    <!--#region Tamagotchi screen; incl frame + char + screen-->
+    <div class="screen"> 
       <img src="assets/frame.png" alt="frame" class="frame">
-      <img src="assets/frameBase.png" alt="frame base" class="screen"> <!-- this will need to change from img to div, bcs interactive / moving -->
-    </div>
 
+      <div class="character" id="character"></div>
+
+      <img src="assets/frameBase.png" alt="frame base" class="screenBackground"> <!-- this will need to change from img to div, bcs interactive / moving -->
+    </div>
+    <!--#endregion-->
     
+    <!--#region Bottom Buttons-->
     <button class="menuButton" id="menuButton">
       <img src="assets/starMenuButton.png" alt="menu button">
     </button>
       
     <img src="assets/blueButtonLeft.png" alt="" class="blueButtonLeft">
     <img src="assets/blueButtonRight.png" alt="" class="blueButtonRight">
+    <!--#endregion-->
 
     <script src="script.js"></script>
   </body>
