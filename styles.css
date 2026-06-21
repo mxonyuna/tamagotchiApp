@@ -9,10 +9,53 @@ body {
   height: 100vh;
   user-select: none;
   -webkit-app-region: drag;
+  background-image: url("assets/tamagotchiDetails.png"), url("assets/tamagotchiBackground.png");
+  background-size: 282px 348px, cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.app {
-  padding: 16px;
+.screenSetUp {
+  position: relative;
+}
+
+.frame {
+  position: fixed;
+  top: 81px;
+  left: 56.7px;
+  z-index: 10;
+}
+
+.screen {
+  position: fixed;
+  top: 81px;
+  left: 58px;
+  z-index: 0;
+}
+
+.menuButton {
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  border: transparent;
+  overflow: none;
+  outline: none;
+
+  position: fixed;
+  top: 281.7px;
+  left: 122.3px;
+}
+
+.blueButtonLeft{
+  position: fixed;
+  top: 267.4px;
+  left: 46.5px;
+}
+
+.blueButtonRight {
+  position: fixed;
+  top: 267.4px;
+  left: 192.7px;
 }
 
 button,
